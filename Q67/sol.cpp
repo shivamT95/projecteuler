@@ -21,11 +21,11 @@ int main()
 		{
 			DP[i][j] = triangle[i][j] + max(DP[i-1][j], DP[i-1][j-1]);
 		}
-		DP[i][j] = DP[i-1][j-1]+triangle[i][j];
+	    DP[i][j] = DP[i-1][j-1]+triangle[i][j];
 	}
 	long long int ans = -1;
 	for(j = 1; j <= N; ++j)
-		ans = max(ans, DP[N][j]);
+	    ans = max(ans, DP[N][j]);
 
 	cout << ans;
 }
