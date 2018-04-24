@@ -8,7 +8,7 @@ def check(n):
 	return (len(st) == 9 and (0 not in st))
 ans = -1
 for n in range(2,10):
-	for i in range(1,10000000000):
+	for i in xrange(1,10000000000):
 		pdt = ""
 		for j in range (1,n+1):
 			pdt = pdt+str(i*j)
