@@ -6,4 +6,4 @@ while len(str(f))<1000:
     f,s = f+s,f
     i += 1
     fb.append(f)
-print(f,i,len(fb))
+print(len(fb))

@@ -7,4 +7,4 @@ def ways(n):
         for j in range(x,n+1):
             tb[j] += tb[j-x]
     return tb[n]
-print(ways(200),mem)
+print(ways(200))
